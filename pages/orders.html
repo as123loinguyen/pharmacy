@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lịch sử đơn hàng</title>
+    <link rel="stylesheet" href="/css/orders.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="nav-left">
+                <li><a href="/pages/index.html">Trang chủ</a></li>
+                <li><a href="/pages/product.html">Danh mục sản phẩm</a></li>
+                <li class="dropdown">
+                    <a href="#">Dịch vụ ▾</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="/pages/chat.html">Tư vấn sức khỏe</a></li>
+                        <li><a href="/pages/orders.html">Đơn thuốc online</a></li>
+                    </ul>
+                </li>
+                <li><a href="/pages/payment.html">Thanh toán & Giao hàng</a></li>
+            </ul>
+            <div class="search-bar">
+                <input type="text" placeholder="Tìm kiếm sản phẩm...">
+                <button>
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+            
+            
+            <ul class="nav-right">
+                <li>
+                    <a href="/pages/cart.html" class="cart-icon">
+                        <img src="https://cdn-icons-png.flaticon.com/32/1170/1170678.png" alt="Giỏ hàng">
+                    </a>
+                </li>
+                <li><a href="/pages/login.html" class="btn-primary">Đăng nhập →</a></li>
+            </ul>
+            
+        </nav>
+    </header>
+    <div class="container">
+        <h2>Lịch sử đơn hàng</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Mã đơn</th>
+                    <th>Sản phẩm</th>
+                    <th>Ngày đặt</th>
+                    <th>Tổng tiền</th>
+                    <th>Trạng thái</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><a href="/pages/order-detail.html">#12345</a></td>                   
+                    <td>Viên uống Spirulina</td>
+                    <td>25/03/2024</td>
+                    <td>168.000 ₫</td>
+                    <td>Đang xử lý</td>
+                </tr>
+                <tr>
+                    <td><a href="/pages/order-detail.html">#12345</a></td>                   
+                    <td>Vitamin C 500mg</td>
+                    <td>22/03/2024</td>
+                    <td>120.000 ₫</td>
+                    <td>Đã giao</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <script src="/js/orders.js"></script>
+
+</body>
+</html>

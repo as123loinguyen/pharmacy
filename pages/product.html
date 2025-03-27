@@ -1,0 +1,59 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danh mục sản phẩm</title>
+    <link rel="stylesheet" href="/css/product.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="nav-left">
+                <li><a href="/pages/index.html">Trang chủ</a></li>
+                <li><a href="/pages/product.html">Danh mục sản phẩm</a></li>
+                <li class="dropdown">
+                    <a href="#">Dịch vụ ▾</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="/pages/chat.html">Tư vấn sức khỏe</a></li>
+                        <li><a href="/pages/orders.html">Đơn thuốc online</a></li>
+                    </ul>
+                </li>
+                <li><a href="/pages/payment.html">Thanh toán & Giao hàng</a></li>
+            </ul>
+            <div class="search-bar">
+                <input type="text" placeholder="Tìm kiếm sản phẩm...">
+                <button><img src="https://static.xx.fbcdn.net/images/emoji.php/v9/t7b/1/32/1f50d.png" alt="Tìm kiếm"></button>
+            </div>
+            <ul class="nav-right">
+                
+               
+                <li><a href="/pages/login.html" class="btn-primary">Đăng nhập →</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="sidebar">
+        <div class="menu-item active" onclick="showProducts('thuoc')">💊 Thuốc</div>
+        <div class="menu-item" onclick="showProducts('tra-cuu-benh')">🩺 Tra cứu bệnh</div>
+        <div class="menu-item" onclick="showProducts('thuc-pham')">🍏 Thực phẩm chức năng</div>
+        <div class="menu-item" onclick="showProducts('cham-soc')">🧴 Chăm sóc cá nhân</div>
+        <div class="menu-item" onclick="showProducts('me-be')">👶 Mẹ và Bé</div>
+        <div class="menu-item" onclick="showProducts('sac-dep')">💄 Chăm sóc sắc đẹp</div>
+        <div class="menu-item" onclick="showProducts('thiet-bi')">⚕️ Thiết bị y tế</div>
+        <div class="menu-item" onclick="showProducts('tien-loi')">🛒 Sản phẩm tiện lợi</div>
+    </div>
+    <div class="content">
+        <div class="product-list" id="product-list">
+            <div class="product-item"><img src="efferalgan.png" alt="Thuốc không kê đơn"><p>Thuốc không kê đơn</p></div>
+            <div class="product-item"><img src="silkeron.png" alt="Thuốc kê đơn"><p>Thuốc kê đơn</p></div>
+            <div class="product-item"><img src="thuoc-khac.png" alt="Thuốc khác"><p>Thuốc khác</p></div>
+            <div class="product-item"><img src="vitamin.png" alt="Vitamin & Thực phẩm"><p>Vitamin & Thực phẩm...</p></div>
+            <div class="product-item more"><span>➡️</span><p>Xem tất cả</p></div>
+        </div>
+    </div>
+    <script src="/js/product.js"></script>
+</body>
+</html>

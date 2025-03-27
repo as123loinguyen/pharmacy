@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chi Tiết Đơn Hàng</title>
+    <link rel="stylesheet" href="/css/order-detail.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="nav-left">
+                <li><a href="/pages/index.html">Trang chủ</a></li>
+                <li><a href="/pages/product.html">Danh mục sản phẩm</a></li>
+                <li class="dropdown">
+                    <a href="#">Dịch vụ ▾</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="/pages/chat.html">Tư vấn sức khỏe</a></li>
+                        <li><a href="/pages/orders.html">Đơn thuốc online</a></li>
+                    </ul>
+                </li>
+                <li><a href="/pages/payment.html">Thanh toán & Giao hàng</a></li>
+            </ul>
+            <div class="search-bar">
+                <input type="text" placeholder="Tìm kiếm sản phẩm...">
+                <button>
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+            
+            
+            <ul class="nav-right">
+                <li>
+                    <a href="/pages/cart.html" class="cart-icon">
+                        <img src="https://cdn-icons-png.flaticon.com/32/1170/1170678.png" alt="Giỏ hàng">
+                    </a>
+                </li>
+                <li><a href="/pages/login.html" class="btn-primary">Đăng nhập →</a></li>
+            </ul>
+            
+        </nav>
+    </header>
+    <div class="container">
+        <h2>Chi Tiết Đơn Hàng</h2>
+        
+        <div class="order-progress">
+            <div class="step active"><i class="fa-solid fa-cart-shopping"></i> Đơn Hàng Đã Đặt</div>
+<div class="step active"><i class="fa-solid fa-credit-card"></i> Đã Thanh Toán</div>
+<div class="step"><i class="fa-solid fa-truck"></i> Đang Giao Hàng</div>
+<div class="step"><i class="fa-solid fa-circle-check"></i> Đã Nhận Hàng</div>
+
+        </div>
+        
+        <div class="order-info">
+            <h3>Thông Tin Đơn Hàng</h3>
+            <p><strong>Mã đơn hàng:</strong> #12345</p>
+            <p><strong>Ngày đặt:</strong> 01/03/2024</p>
+            <p><strong>Trạng thái:</strong> Đang xử lý</p>
+            
+            <h3>Chi Tiết Sản Phẩm</h3>
+            <div class="order-items">
+                <div class="item">
+                    <img src="https://via.placeholder.com/80" alt="Sản phẩm 1">
+                    <div>
+                        <p><strong>Sản phẩm:</strong> Vitamin</p>
+                        <p><strong>Số lượng:</strong> 2</p>
+                        <p><strong>Giá:</strong> 250.000đ</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="https://via.placeholder.com/80" alt="Sản phẩm 2">
+                    <div>
+                        <p><strong>Sản phẩm:</strong> Kẹo Kera</p>
+                        <p><strong>Số lượng:</strong> 1</p>
+                        <p><strong>Giá:</strong> 750.000đ</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        <div class="shipping-info">
+            <h3>Thông Tin Giao Hàng</h3>
+            <p><strong>Người nhận:</strong> Nguyễn Văn A</p>
+            <p><strong>Địa chỉ:</strong> 123 Đường ABC, Quận 1, TP.HCM</p>
+            <p><strong>Số điện thoại:</strong> 0123 456 789</p>
+        </div>
+        
+        <div class="payment-info">
+            <h3>Thông Tin Thanh Toán</h3>
+            <p><strong>Phương thức:</strong> Thanh toán khi nhận hàng</p>
+            <p><strong>Tổng tiền:</strong> 500.000đ</p>
+        </div>
+        
+        <div class="delivery-info">
+            <h3>Thông Tin Vận Chuyển</h3>
+            <p><strong>Đơn vị vận chuyển:</strong> Giao hàng nhanh</p>
+            <p><strong>Dự kiến giao:</strong> 03/03/2024</p>
+        </div>
+        
+        <button id="back-btn">Quay lại</button>
+    </div>
+    <script src="/js/order-detail.js"></script>
+</body>
+</html>

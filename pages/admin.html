@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin - Quản lý Website Bán Thuốc</title>
+    <link rel="stylesheet" href="/css/admin.css">
+</head>
+<body>
+    <div class="admin-container">
+        <aside class="sidebar">
+            <h2>Quản lý</h2>
+            <ul>
+                <li><a href="#" data-section="Dashboard">Dashboard</a></li>
+                <li><a href="#" data-section="Quản lý Sản phẩm">Quản lý Sản phẩm</a></li>
+                <li><a href="#" data-section="Quản lý Đơn hàng">Quản lý Đơn hàng</a></li>
+                <li><a href="#" data-section="Quản lý Khách hàng">Quản lý Khách hàng</a></li>
+                <li><a href="#" data-section="Quản lý Bác sĩ">Quản lý Bác sĩ</a></li>
+                <li><a href="#" data-section="Báo cáo Doanh thu">Báo cáo Doanh thu</a></li>
+                <li><a href="#" data-section="Cài đặt">Cài đặt</a></li>
+            </ul>
+        </aside>
+        <main class="dashboard">
+            <header>
+                <h1>Dashboard</h1>
+            </header>
+            <section class="stats content-section" data-section="Dashboard">
+                <div class="stat-box">Tổng đơn hàng: <span id="orders-count">150</span></div>
+                <div class="stat-box">Doanh thu: <span id="revenue">500 triệu VND</span></div>
+                <div class="stat-box">Khách hàng: <span id="customers">300</span></div>
+                <div class="stat-box">Sản phẩm tồn kho: <span id="stock">1200</span></div>
+            </section>
+            
+            <section class="content-section" data-section="Quản lý Sản phẩm" style="display: none;">
+                <h2>Quản lý Sản phẩm</h2>
+                <p>Danh sách sản phẩm, thêm/xóa/sửa sản phẩm.</p>
+            </section>
+            
+            <section class="content-section" data-section="Quản lý Đơn hàng" style="display: none;">
+                <h2>Quản lý Đơn hàng</h2>
+                <p>Danh sách đơn hàng, cập nhật trạng thái đơn hàng.</p>
+            </section>
+            
+            <section class="content-section" data-section="Quản lý Khách hàng" style="display: none;">
+                <h2>Quản lý Khách hàng</h2>
+                <p>Danh sách khách hàng, thông tin liên hệ.</p>
+            </section>
+            
+            <section class="content-section" data-section="Quản lý Bác sĩ" style="display: none;">
+                <h2>Quản lý Bác sĩ</h2>
+                <p>Danh sách bác sĩ tư vấn, thông tin và lịch làm việc.</p>
+            </section>
+            
+            <section class="content-section" data-section="Báo cáo Doanh thu" style="display: none;">
+                <h2>Báo cáo Doanh thu</h2>
+                <p>Thống kê doanh thu theo thời gian.</p>
+            </section>
+            
+            <section class="content-section" data-section="Cài đặt" style="display: none;">
+                <h2>Cài đặt</h2>
+                <p>Cấu hình hệ thống, tài khoản quản trị.</p>
+            </section>
+        </main>
+    </div>
+    <script src="/js/admin.js"></script>
+</body>
+</html>

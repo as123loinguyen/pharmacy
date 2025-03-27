@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giỏ hàng</title>
+    <link rel="stylesheet" href="/css/cart.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="nav-left">
+                <li><a href="/pages/index.html">Trang chủ</a></li>
+                <li><a href="/pages/product.html">Danh mục sản phẩm</a></li>
+                <li class="dropdown">
+                    <a href="#">Dịch vụ ▾</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="/pages/chat.html">Tư vấn sức khỏe</a></li>
+                        <li><a href="/pages/orders.html">Đơn thuốc online</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Thanh toán & Giao hàng</a></li>
+            </ul>
+            <div class="search-bar">
+                <input type="text" placeholder="Tìm kiếm sản phẩm...">
+                <button>
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+            
+            
+            <ul class="nav-right">
+                <li>
+                    <a href="/pages/cart.html" class="cart-icon">
+                        <img src="https://cdn-icons-png.flaticon.com/32/1170/1170678.png" alt="Giỏ hàng">
+                    </a>
+                </li>
+                <li><a href="/pages/login.html" class="btn-primary">Đăng nhập →</a></li>
+            </ul>
+            
+        </nav>
+    </header>
+    <div class="cart-container">
+        <img src="empty-cart.png" alt="Giỏ hàng trống" class="cart-icon">
+        <h2 class="cart-title">Chưa có sản phẩm nào</h2>
+        <p class="cart-text">Hãy khám phá để mua sắm thêm</p>
+        <a href="/pages/product.html" class="explore-button">Khám phá ngay</a>
+    </div>
+</body>
+</html>

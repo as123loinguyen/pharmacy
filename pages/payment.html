@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Thanh Toán</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/css/payment.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body class="bg-gray-100 p-4">
+    <header>
+        <nav>
+            <ul class="nav-left">
+                <li><a href="/pages/index.html">Trang chủ</a></li>
+                <li><a href="/pages/product.html">Danh mục sản phẩm</a></li>
+                <li class="dropdown">
+                    <a href="#">Dịch vụ ▾</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="/pages/chat.html">Tư vấn sức khỏe</a></li>
+                        <li><a href="/pages/orders.html">Đơn thuốc online</a></li>
+                    </ul>
+                </li>
+                <li><a href="/pages/payment.html">Thanh toán & Giao hàng</a></li>
+            </ul>
+            <div class="search-bar">
+                <input type="text" placeholder="Tìm kiếm sản phẩm...">
+                <button>
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+            
+            
+            <ul class="nav-right">
+                <li>
+                    <a href="/pages/cart.html" class="cart-icon">
+                        <img src="https://cdn-icons-png.flaticon.com/32/1170/1170678.png" alt="Giỏ hàng">
+                    </a>
+                </li>
+                <li><a href="/pages/login.html" class="btn-primary">Đăng nhập →</a></li>
+            </ul>
+            
+        </nav>
+    </header>
+    <div class="max-w-4xl mx-auto bg-white shadow-lg rounded-lg p-6">
+        <h1 class="text-2xl font-bold">Thanh toán</h1>
+        <div class="bg-yellow-100 p-3 rounded mt-3">
+            <p>Đăng ký thành viên của Pharmacity để hưởng những khuyến mãi hấp dẫn...</p>
+            <a href="#" class="text-blue-600 font-bold">Tham gia ngay</a>
+        </div>
+        
+        <div class="mt-4 border p-4 rounded">
+            <div class="flex items-center gap-4">
+                <img src="product.jpg" alt="Sản phẩm" class="w-16 h-16">
+                <div>
+                    <p class="font-semibold">Viên uống DHG Pharma...</p>
+                    <p>Hộp</p>
+                </div>
+                <span class="ml-auto font-bold">168.000 ₫</span>
+            </div>
+        </div>
+
+        <div class="mt-4">
+            <label class="font-semibold">Ghi chú</label>
+            <input type="text" class="w-full border p-2 rounded mt-1" placeholder="Nhập ghi chú...">
+        </div>
+
+        <h2 class="mt-6 font-bold text-lg">Hình thức nhận hàng</h2>
+        <div class="flex gap-4 mt-2">
+            <button class="bg-blue-500 text-white px-4 py-2 rounded">Giao hàng tận nơi</button>
+            <button class="border px-4 py-2 rounded">Nhận tại nhà thuốc</button>
+        </div>
+
+        <h2 class="mt-6 font-bold text-lg">Thông tin người đặt hàng</h2>
+        <div class="grid grid-cols-2 gap-4 mt-2">
+            <input type="text" placeholder="Họ và Tên" class="border p-2 rounded">
+            <input type="text" placeholder="Số điện thoại" class="border p-2 rounded">
+            <input type="text" placeholder="Địa chỉ" class="border p-2 rounded col-span-2">
+            <input type="text" placeholder="Tỉnh/Thành phố" class="border p-2 rounded col-span-2">
+        </div>
+
+        <div class="mt-6 border p-4 rounded bg-gray-50">
+            <p class="flex justify-between font-bold">Tạm tính <span>168.000 ₫</span></p>
+            <p class="flex justify-between">Phí vận chuyển <span>0 ₫</span></p>
+            <hr class="my-2">
+            <p class="flex justify-between text-red-600 text-lg font-bold">Tổng tiền <span>168.000 ₫</span></p>
+        </div>
+
+        <div class="mt-4 flex items-center">
+            <input type="checkbox" id="agree" class="mr-2">
+            <label for="agree">Đồng ý với <a href="#" class="text-blue-600">Điều khoản</a></label>
+        </div>
+
+        <button class="w-full bg-blue-600 text-white font-bold py-2 mt-4 rounded" id="btnOrder">Đặt hàng</button>
+    </div>
+    
+    <script src="/js/payment.js"></script>
+</body>
+</html>

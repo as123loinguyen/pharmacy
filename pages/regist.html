@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng ký</title>
+    <link rel="stylesheet" href="/css/regist.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="nav-left">
+                <li><a href="/pages/index.html">Trang chủ</a></li>
+                <li><a href="/pages/product.html">Danh mục sản phẩm</a></li>
+                <li class="dropdown">
+                    <a href="#">Dịch vụ ▾</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="/pages/chat.html">Tư vấn sức khỏe</a></li>
+                        <li><a href="/pages/orders.html">Đơn thuốc online</a></li>
+                    </ul>
+                </li>
+                <li><a href="/pages/payment.html">Thanh toán & Giao hàng</a></li>
+            </ul>
+            <div class="search-bar">
+                <input type="text" placeholder="Tìm kiếm sản phẩm...">
+                <button>
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+            
+            
+            <ul class="nav-right">
+                <li>
+                    <a href="/pages/cart.html" class="cart-icon">
+                        <img src="https://cdn-icons-png.flaticon.com/32/1170/1170678.png" alt="Giỏ hàng">
+                    </a>
+                </li>
+                <li><a href="/pages/login.html" class="btn-primary">Đăng nhập →</a></li>
+            </ul>
+            
+        </nav>
+    </header>
+    
+    <div class="register-container">
+        <h2>Đăng ký</h2>
+        <form>
+            <input type="text" placeholder="Họ và tên" required>
+            <input type="tel" placeholder="Số điện thoại" required>
+            <input type="password" placeholder="Mật khẩu" required>
+            <input type="password" placeholder="Nhập lại mật khẩu" required>
+            
+            <div class="gender">
+                <label><input type="radio" name="gender" value="Nam"> Nam</label>
+                <label><input type="radio" name="gender" value="Nữ"> Nữ</label>
+                <label><input type="radio" name="gender" value="Khác"> Khác</label>
+            </div>
+            
+            <div class="birthdate">
+                <select>
+                    <option>Ngày</option>
+                </select>
+                <select>
+                    <option>Tháng</option>
+                </select>
+                <select>
+                    <option>Năm</option>
+                </select>
+            </div>
+            
+            <div class="buttons">
+                <a href="#" class="back-link">Quay lại</a>
+                <button type="submit" class="register-btn">Đăng ký</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
